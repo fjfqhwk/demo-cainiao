@@ -25,7 +25,7 @@
         <url-pattern>/fk</url-pattern>
     </servlet-mapping>
     
-    <!-- Test servlet-->
+    <!-- 测试表单 servlet-->
     <servlet>
         <servlet-name>JokerTest</servlet-name>
         <servlet-class>com.fox.TestServlet</servlet-class>
