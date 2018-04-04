@@ -16,7 +16,7 @@
     <td>
         <dd>用户名：<input type="text" name="name"></dd>
         <hr>
-        <dd><input type="submit" value="提交"></dd>
+        <dd><input type="submit" value="提交"></dd> 
     </td>
 </form>
 </body>
