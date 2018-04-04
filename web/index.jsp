@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>life.jsp</title>
-    <script src="/Scripts/JS/jquery.1.9.1.min.js" type="text/javascript"></script>
+    <script src="/resource/js/jquery-3.3.1.min.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -52,7 +52,7 @@
 <button onclick="open()">点击修改头像</button>
 <script type="text/javascript">
 function open() {
-    window.navigator("/upload.jsp");
+    // window.navigate("/upload.jsp");
     alert("跳转");
     
 }
