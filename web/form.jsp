@@ -18,6 +18,6 @@
         <hr>
         <dd><input type="submit" value="提交"></dd> 
     </td>
-</form>
+</form> 
 </body>
 </html>
