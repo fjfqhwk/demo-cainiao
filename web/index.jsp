@@ -49,13 +49,10 @@
 <p><%=content3 %>
 </p>
 
-<button onclick="open()">点击修改头像</button>
-<script type="text/javascript">
-function open() {
-    // window.navigate("/upload.jsp");
-    alert("跳转");
-    
-}
-</script>
+<form action="/cainiao/upload.jsp" enctype="multipart/form-data">
+
+<input type="submit" value="跳转页面" >
+</form>
+
 </body>
 </html>

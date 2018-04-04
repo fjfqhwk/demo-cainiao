@@ -3,17 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!--上传文件Servlet-->
     <servlet>
-        <display-name>UploadServlet</display-name>
         <servlet-name>UploadServlet</servlet-name>
         <servlet-class>com.fox.UploadServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>UploadServlet</servlet-name>
-        <url-pattern>/TomcatTest/UploadServlet</url-pattern>
+        <url-pattern>/upload</url-pattern>
     </servlet-mapping>
     
+    <!-- 首页 servlet-->
     <servlet>
         <servlet-name>HelloWorld</servlet-name>
         <servlet-class>com.fox.HelloServlet</servlet-class>
@@ -21,7 +22,17 @@
 
     <servlet-mapping>
         <servlet-name>HelloWorld</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/fk</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Test servlet-->
+    <servlet>
+        <servlet-name>JokerTest</servlet-name>
+        <servlet-class>com.fox.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JokerTest</servlet-name>
+        <url-pattern>/JokerWeb</url-pattern>
     </servlet-mapping>
 
 

@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet ("/HelloWorld")
+//@WebServlet ("/HelloWorld")
 public class HelloServlet extends HttpServlet {
     private String message;
 
