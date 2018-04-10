@@ -1,5 +1,6 @@
 package com.fox;
 
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -19,5 +20,8 @@ public class TestServlet extends HttpServlet {
         PrintStream out = new PrintStream(res.getOutputStream());
 
         out.println("这是一个测试页面----" + name);
+        System.out.println("测试成功！");
+
     }
+
 }

@@ -22,5 +22,13 @@
     <br/><br/>
     <input type="submit" value="上传"/> 
 </form>
+
+<form action="message.jsp" method=GET>
+    站点名: <input type="text" name="name">
+    <br />
+    网址: <input type="text" name="url" />
+    <input type="submit" value="提交" />
+</form>
+
 </body>
 </html>

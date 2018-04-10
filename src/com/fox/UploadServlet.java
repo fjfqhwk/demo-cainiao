@@ -24,7 +24,7 @@ public class UploadServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     // 上传文件存储目录
-    private static final String UPLOAD_DIRECTORY = "upload";
+    private static final String UPLOAD_DIRECTORY = "/WEB-INF/files";
 
     // 上传配置
     private static final int MEMORY_THRESHOLD = 1024 * 1024 * 3;  // 3MB
@@ -74,6 +74,7 @@ public class UploadServlet extends HttpServlet {
             uploadDir.mkdir();
         }
 
+        
         try {
             // 解析请求的内容提取文件数据
             @SuppressWarnings("unchecked")
@@ -100,6 +101,9 @@ public class UploadServlet extends HttpServlet {
             request.setAttribute("message",
                     "错误信息: " + ex.getMessage());
         }
+        
+        
+        
         // 跳转到 message.jsp
         getServletContext().getRequestDispatcher("/message.jsp").forward(request, response);
     }

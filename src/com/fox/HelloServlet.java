@@ -1,5 +1,6 @@
 package com.fox;
 
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -8,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet ("/HelloWorld")
+@WebServlet("/HelloWorld")
 public class HelloServlet extends HttpServlet {
     private String message;
 
@@ -25,6 +26,7 @@ public class HelloServlet extends HttpServlet {
         //设置逻辑实现  
         PrintWriter out = resp.getWriter();
         out.println("<h1>" + message + "</h1>");
+
     }
 
     @Override
