@@ -15,9 +15,7 @@
 </head>
 <body>
 
-
 <h1>笨鸟先飞 JSP 测试实例</h1>
-
 
 <form action="/cainiao/upload.jsp" enctype="multipart/form-data" method="post">
     <input type="submit" value="跳转页面">
